@@ -4,11 +4,18 @@
 <header class="jumbotron" style="background-color:#A9F16C">
   <div class="container">
     <div class="row">
-      <h1>It works!</h1>
+      <h1>{{.greeting}}</h1>
       <p></p>
     </div>
   </div>
 </header>
+<div>
+  <form action="/App/Hello" method="GET">
+    <input type="text" name="myName"/>
+    <br>
+    <input type="submit" value="Say hello!"/>
+  </form>
+</div>
 
 <div class="container">
   <div class="row">
